@@ -5,8 +5,8 @@ public class Persona {
 	// El método main define el punto de inicio de mi programa
 	public static void main(String[] args) {
 
-		// [Tipo de dato][nombre de la referencia] = [operador de JAVA que permite crear objetos][Constructor]
 		System.out.println("Ejecución de Jose");
+		// [Tipo de dato][nombre de la referencia] = [operador de JAVA que permite crear objetos][Constructor]
 		Persona persona1 = new Persona("Jose", 70, 'M');
 		persona1.respirar();
 		persona1.nacer();
@@ -22,7 +22,8 @@ public class Persona {
 	}
 
 	/*
-	 * Atributos de la Clase [Modificador] [tipo de dato] [nombre del atributo]
+	 * Atributos de la Clase 
+	 * [Modificador] [tipo de dato] [nombre del atributo]
 	 */
 
 	String nombre;
@@ -42,15 +43,13 @@ public class Persona {
 	// Constructor por defecto
 	// [Modificador][Nombre de la Clase](parametros)
 	public Persona() {
-		// Si Utilizo this() para ejecutar otro constructor, debe de ser en la primera línea de código de mi constructor, solo se permite un this()
-		// en la clase para los constructores
+		// Si Utilizo this() para ejecutar otro constructor, debe de ser en la primera línea de código de mi constructor, solo se permite un this() en la clase para los constructores
 		this("Defaulr",10,'F');
 		System.out.println("Constructor sin parametros");
 	}
 
 	/*
-	 * Métodos de la Clase [modificador] [valor de retorno] [nombre del método]
-	 * (parametros)
+	 * Métodos de la Clase [modificador] [valor de retorno] [nombre del método](parametros)
 	 */
 	void respirar() {
 		System.out.println("La persona ".concat(nombre).concat(" está respirando"));
